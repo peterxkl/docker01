@@ -14,13 +14,4 @@ public class Application {
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
-
-    @RequestMapping("/user/find")
-    @ResponseBody
-    public Object findUser() {
-        Map<String, String> map = new HashMap<>();
-        map.put("name", "dillon");
-        map.put("age", "22");
-        return map;
-    }
 }
